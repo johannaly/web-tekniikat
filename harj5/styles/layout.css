@@ -46,10 +46,10 @@ body {
 }
 
 #content_left {
-    width: 45%;
+    width: 40%;
     background-color: #F7F5EE;
     border: 1px solid #AC9675;
-    margin: 1.25em 2em 1.25em 2em;
+    margin: 1.25em 0 1.25em 5em;
     float: left;
     padding: 1.5em;
     box-sizing: border-box;
@@ -57,10 +57,10 @@ body {
 }
 
 #content_right {
-    width: 45%;
+    width: 40%;
     background-color: #F7F5EE;
     border: 1px solid #AC9675;
-    margin: 1.25em 2em 1.25em 2em;
+    margin: 1.25em 5em 1.25em 0;
     float: right;
     padding: 1.5em;
     box-sizing: border-box;
@@ -74,11 +74,28 @@ body {
     margin: 0px auto 0px auto;
 }
 
+h2 {
+    color: #E49A2F;
+    margin-bottom: 1em;
+}
+
+h3 {
+    color: #E49A2F;
+    margin-bottom: 1em;
+}
+
+#content p {
+    margin-bottom: 1em;
+}
+
 .kuva {
-    text-align: center;
     width: 100%;
     height: auto;
-    padding: 1.5em;
+    margin: 1em 0 1em 0;
+}
+
+.kuva img {
+    width: 100%;
 }
 
 ul {
