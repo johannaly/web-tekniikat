@@ -1,74 +1,59 @@
+
+@import url("https://use.typekit.net/ojv4ekx.css");
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-family: 'europa', serif;
+    font-size: 1.2em;
     line-height: 1.3;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 2em;
     }
 
 .johanna_teksti {
     text-align: center;
     color: black;
+    letter-spacing: 0.1em;
+    font-weight: 400;
   }
 
 h1 {
-    color: green;
+    color: #087ED9;
     text-align: center;
     }
 
 h2 {
     margin-top: 0px;
-    color: darkblue;
+    color: black;
+}
+
+h3 {
+    font-size: 1.125em;
 }
 
 .pikku_kuva {
-    box-shadow: 10px 10px 5px grey;
     width: 211px;
     height: 269px;
     margin: auto;
 }
 
+
 .opiskelu {
     float: left;
-    width: 33.33%;
-    border: 0.5px solid grey;
+    border: 0.5px solid #087ED9;
     box-sizing: border-box;
-    background-color: lightblue;
     padding: 30px;
     height: 100%;
     border-radius: 10px;
     border-collapse: collapse;
+    background-color: white;
 }
 
-.sairaanhoitaja {
-    float: left;
-    border: 0.5px solid grey;
-    box-sizing: border-box;
-    width: 33.33%;
-    background-color: lightblue;
-    padding: 30px;
-    height: 100%;
-    border-radius: 10px;
-    border-collapse: collapse;
-
-}
-
-.vapaa_aika {
-    float: right;
-    width: 33.33%;
-    border: 0.5px solid grey;
-    box-sizing: border-box;
-    background-color: lightblue;
-    padding: 30px;
-    height: 100%;
-    border-radius: 10px;
-    border-collapse: collapse;
-}
 
 section {
-    max-width: 80%;
+    max-width: 83.33%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -77,18 +62,19 @@ section {
 
 .pikku_teksti {
     box-sizing: border-box;
-    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-top: -10em;
-    height: 100%;
     line-height: 1.5;
     text-align: center;
     padding: 20px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .container {
-    background-color: #4d94ff;
+    background-color:#087ED9;
     padding-bottom: 14em;
     padding-top: 5em;
     margin-top: 5em;
@@ -99,20 +85,113 @@ section {
     margin: auto;
     line-height: 1.5;
     text-align: center;
-    max-width: 70%;
+    max-width: 75%;
+    font-size: 1.25;
 }
 
 .ala_teksti {
-    padding-top: 8em;
-    margin-top: 5em;
+    padding-top: 5em;
     text-align: center;
     clear: right;
 }
 
 .kurssit {
-    max-width: 80%;
+    max-width: 83.33%;
+    clear: both;
 }
 
-.laatikot {
-    height: 50%;
+
+
+.kurssi_teksti {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    text-align: center;
+    padding: 20px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;  
+    max-width: 33.33%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;   
 }
+
+footer {
+    background-color: #087ED9;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 2.0;
+    padding: 2em 10em 10em 10em;
+    text-align: center;
+    margin-top: 5em;
+}
+
+.ala_tiedot {
+    opacity: 0.7;
+}
+
+.kurssi_teksti img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* Extra small devices (phones) */
+    @media (max-width: 767px) {
+    .col-xs-1 {width: 8.33%;}
+    .col-xs-2 {width: 16.66%;}
+    .col-xs-3 {width: 25%;}
+    .col-xs-4 {width: 33.33%;}
+    .col-xs-5 {width: 41.66%;}
+    .col-xs-6 {width: 50%;}
+    .col-xs-7 {width: 58.33%;}
+    .col-xs-8 {width: 66.66%;}
+    .col-xs-9 {width: 75%;}
+    .col-xs-10 {width: 83.33%;}
+    .col-xs-11 {width: 91.66%;}
+    .col-xs-12 {width: 100%;}
+    }
+  
+    /* For tablets: */
+    @media (max-width: 991px) and (min-width: 768px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    .laatikot {
+        display: flex;
+    }
+  }
+  
+    /* For desktop: */
+    @media (min-width: 992px) {  
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .laatikot {
+        display: flex;
+    }
+  }
