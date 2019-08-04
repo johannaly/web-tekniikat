@@ -10,19 +10,19 @@ body {
     margin-left: auto;
     margin-right: auto;
     line-height: 2em;
-    }
+}
 
 .johanna_teksti {
     text-align: center;
     color: black;
     letter-spacing: 0.1em;
     font-weight: 400;
-  }
+}
 
 h1 {
     color: #087ED9;
     text-align: center;
-    }
+}
 
 h2 {
     margin-top: 0px;
@@ -34,9 +34,10 @@ h3 {
 }
 
 .pikku_kuva {
-    width: 211px;
-    height: 269px;
+    max-width: 100%;
+    height: auto;
     margin: auto;
+    text-align: center;
 }
 
 
@@ -95,13 +96,6 @@ section {
     clear: right;
 }
 
-.kurssit {
-    max-width: 83.33%;
-    clear: both;
-}
-
-
-
 .kurssi_teksti {
     box-sizing: border-box;
     margin-left: auto;
@@ -112,10 +106,13 @@ section {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;  
-    max-width: 33.33%;
-    position: relative;
-    text-align: center;
-    overflow: hidden;   
+    text-align: center;  
+    float: left; 
+}
+
+.kurssi_teksti img {
+    max-width: 100%;
+    height: auto;
 }
 
 footer {
@@ -133,12 +130,8 @@ footer {
     opacity: 0.7;
 }
 
-.kurssi_teksti img {
-    max-width: 100%;
-    height: auto;
-}
 
-
+/*määritykset responsiivisuutta varten*/
 
 /* Extra small devices (phones) */
     @media (max-width: 767px) {
