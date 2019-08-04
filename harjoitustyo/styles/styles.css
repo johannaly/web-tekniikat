@@ -1,5 +1,12 @@
 
+/*importoidaan haluttu fontti*/
 @import url("https://use.typekit.net/ojv4ekx.css");
+
+
+/*määritys koskee kaikkia elementtejä*/
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'europa', serif;
@@ -38,20 +45,22 @@ h3 {
     height: auto;
     margin: auto;
     text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
+.pikku_kuva img {
+    border-radius: 50%;
+}
 
-.opiskelu {
-    float: left;
+.infobox {
     border: 0.5px solid #087ED9;
-    box-sizing: border-box;
     padding: 30px;
     height: 100%;
     border-radius: 10px;
     border-collapse: collapse;
     background-color: white;
 }
-
 
 section {
     max-width: 83.33%;
@@ -60,29 +69,38 @@ section {
     margin-top: 50px;
 }
 
-
 .pikku_teksti {
-    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -10em;
     line-height: 1.5;
     text-align: center;
     padding: 20px;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    float: left;
+}
+
+.pikku_teksti2 {
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    text-align: center;
+    padding: 20px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    float: left;
 }
 
 .container {
     background-color:#087ED9;
-    padding-bottom: 14em;
+    padding-bottom: 10em;
     padding-top: 5em;
-    margin-top: 5em;
     color: white;
 }
 
-.alku_teksti {
+.esittely {
     margin: auto;
     line-height: 1.5;
     text-align: center;
@@ -91,26 +109,12 @@ section {
 }
 
 .ala_teksti {
-    padding-top: 5em;
+    padding-top: 7em;
     text-align: center;
     clear: right;
 }
 
-.kurssi_teksti {
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.5;
-    text-align: center;
-    padding: 20px;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;  
-    text-align: center;  
-    float: left; 
-}
-
-.kurssi_teksti img {
+.pikku_teksti2 img {
     max-width: 100%;
     height: auto;
 }
@@ -121,7 +125,7 @@ footer {
     font-size: 1.2em;
     font-weight: 300;
     line-height: 2.0;
-    padding: 2em 10em 10em 10em;
+    padding: 2em 0em 10em 0em;
     text-align: center;
     margin-top: 5em;
 }
@@ -133,8 +137,13 @@ footer {
 
 /*määritykset responsiivisuutta varten*/
 
-/* Extra small devices (phones) */
-    @media (max-width: 767px) {
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+    /* Extra small devices (phones) */
+@media (max-width: 767px) {
     .col-xs-1 {width: 8.33%;}
     .col-xs-2 {width: 16.66%;}
     .col-xs-3 {width: 25%;}
@@ -147,10 +156,14 @@ footer {
     .col-xs-10 {width: 83.33%;}
     .col-xs-11 {width: 91.66%;}
     .col-xs-12 {width: 100%;}
+
+    #ensimmäinen_teksti {
+        margin-top: -25%;
     }
+}
   
     /* For tablets: */
-    @media (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
     .col-s-3 {width: 25%;}
@@ -164,13 +177,13 @@ footer {
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 
-    .laatikot {
-        display: flex;
+    #ensimmäinen_teksti {
+        margin-top: -25%;
     }
-  }
+}
   
     /* For desktop: */
-    @media (min-width: 992px) {  
+@media (min-width: 992px) {  
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -187,4 +200,8 @@ footer {
     .laatikot {
         display: flex;
     }
-  }
+
+    .pikku_teksti {
+        margin-top: -10em;
+    }
+}

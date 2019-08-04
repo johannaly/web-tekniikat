@@ -3,20 +3,27 @@
 <head>
     <link rel="stylesheet" href="styles/styles.css">
     <meta charset="utf-8"/>
+    <meta name="description" content="Portfolio,Esittely">
+    <meta name="keywords" content="HTML,CSS,Portfolio,Insinööri,Sairaanhoitaja">
+    <meta name="author" content="Johanna Lyytinen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2b76362adf.js"></script>
     <title>Johanna Lyytinen</title>
 </head>
     
 <body>
+    <!--Alun otsikot ja kuva-->
     <div class="johanna_teksti">
         <h1>Johanna Lyytinen</h1>
         <h3>toisen vuoden insinööriopiskelija, sairaanhoitaja ja äiti</h3>
         </div>
-        <div class="pikku_kuva"><img src="images/Johanna_kuva.jpg" alt="Johannan kuva" style="border-radius: 50%;">
+        <div class="pikku_kuva">
+            <img src="images/Johanna_kuva.jpg" alt="Johannan kuva">
         </div>
+
+    <!--Esittely-->    
     <div class="container">
-        <section class="alku_teksti">
+        <section class="esittely">
             <div>Aloitin insinööriopiskelut Centria Ammattikorkeakoulussa syksyllä 2018. Olin jo pitkään miettinyt alanvaihdosta ja haaveillut uusista opinnoista. 
         Viimein kaikki tuntui loksahtavan kohdalleen ja kun pääsykokeiden jälkeen sain kuulla päässeeni sisään kouluun, oli päätös valmis.
         Ensimmäisen vuoden opinnot sisälsivät paljon perusopintoja, muun muuassa matematiikkaa ja kieliä, mutta pääsin myös tutustumaan ohjelmointiin,
@@ -25,17 +32,18 @@
         </section>  
     </div>
 
+    <!--Kolme erillistä laatikkoa-->
     <section class="laatikot">
-        <div class="pikku_teksti col-4 col-s-3 col-xs-12">
-           <div class="opiskelu">
+        <div class="pikku_teksti col-4 col-s-12 col-xs-12" id="ensimmäinen_teksti">
+           <div class="infobox">
                 <i class="fas fa-laptop-code"></i>
                 <h2>Opiskelija</h2>
                 <p>Opiskelen toista vuotta tieto- ja viestintätekniikan insinööriksi Centria Ammattikorkeakoulussa. Asun Tampereella aviomieheni
                 ja tyttäremme kanssa. Perhe-elämän ja opiskelun yhdistäminen vaatii suunnitelmallisuutta ja aimo annoksen opiskelumotivaatiota.</p>
             </div>
         </div>
-        <div class="pikku_teksti col-4 col-s-3 col-xs-12">
-            <div class="opiskelu">
+        <div class="pikku_teksti col-4 col-s-12 col-xs-12">
+            <div class="infobox">
                 <i class="fas fa-heartbeat"></i>
                 <h2>Sairaanhoitaja</h2>
                 <p>Aiemmalta ammatiltani olen sairaanhoitaja ja olen työskennellyt 15 vuotta sairaanhoitajana eri sairaaloissa ja klinikoissa,
@@ -43,8 +51,8 @@
                 Uskon, että sairaanhoitajana hankitut taidot ja tiedot tukevat myös insinöörinä toimimista.</p>
              </div>
         </div>
-        <div class="pikku_teksti col-4 col-s-3 col-xs-12">
-            <div class="opiskelu">
+        <div class="pikku_teksti col-4 col-s-12 col-xs-12">
+            <div class="infobox">
                 <i class="fas fa-mountain"></i>
                 <h2>Vapaa-aika</h2>
                 <p>Vapaa-aikani kuluu enimmäkseen opiskelujen ja kiipeilyn parissa. Käyn yhdessä perheen ja ystävien kanssa kiipeilemässä
@@ -54,25 +62,27 @@
         </div>
     </section>
 
-    <section>
+    <!--Seuraavan osion kuvaus-->
             <div class="ala_teksti">
                 <h2>Viimeisimpiä kurssejani</h2>
                 <p>Tämä osio täydentyy sitä mukaa kun suoritan kursseja.</p>
-                <p>Haluatko kuulla lisää? Lähetä minulle sähköpostia osoitteeseen: johanna.lyytinen@centria.fi</p>
+                <p>Haluatko kuulla lisää? Lähetä minulle sähköpostia: <a href="mailto:johanna.lyytinen@centria.fi">johanna.lyytinen@centria.fi</a></p>
             </div>
+
+    <!--Kursseista kertovat laatikot, lisätään sitä mukaa kun ammattiopintoja kertyy-->        
         <section class="laatikot">
-            <div class="kurssi_teksti col-4 col-s-3 col-xs-12">
-                <div class="opiskelu">
+            <div class="pikku_teksti2 col-4 col-s-12 col-xs-12">
+                <div class="infobox">
                     <h2>Ohjelmoinnin perusteet</h2>
                     <p>Ohjelmoinnin perusteet kurssilla opin perusrakenteita C++ :sta. Muuttujat, taulukot, ehtolauseet ja silmukat tulivat
                         tutuiksi.
                     </p>
-                    <img src="images/ohjelmointi.PNG" alt="codeblocks kaappaus">
+                    <img src="images/ohjelmointi.PNG" alt="codeblocks kuvakaappaus">
                 </div>
             </div>
             
-            <div class="kurssi_teksti col-4 col-s-3 col-xs-12">
-                <div class="opiskelu">
+            <div class="pikku_teksti2 col-4 col-s-12 col-xs-12">
+                <div class="infobox">
                     <h2>IP-verkot</h2>
                     <p>Tällä kurssilla opin IP-verkkojen perusteita ja tein paljon simulointiharjoituksia PacketTracer- ohjelmalla.
                         Tein muun muuassa kotiverkon simulointiharjoituksen.
@@ -81,8 +91,8 @@
                 </div>
             </div>
 
-            <div class="kurssi_teksti col-4 col-s-3 col-xs-12">
-                <div class="opiskelu">
+            <div class="pikku_teksti2 col-4 col-s-12 col-xs-12">
+                <div class="infobox">
                     <h2>Web-ohjelmointi</h2>
                     <p>Tällä kurssilla opin perusrakenteet CSS:stä ja HTML:stä. Opin myös responsiivista web-suunnittelua ja tein tämän
                         sivuston loppuharjoituksena kurssille.
@@ -93,8 +103,8 @@
         </section>
 
         <section class="laatikot">    
-            <div class="kurssi_teksti col-4 col-s-3 col-xs-12">
-                <div class="opiskelu">
+            <div class="pikku_teksti2 col-4 col-s-12 col-xs-12">
+                <div class="infobox">
                     <h2>Elektroniikka</h2>
                     <p>Kurssilla opin analogiaelektroniikan ja digitaalielektroniikan perusteet. Tein paljon simulointiharjoituksia Yenka-ohjelmalla
                         ja harjoittelin myös koulun laboratoriossa muun muuassa logiikka-analysaattorin käyttöä.
@@ -103,25 +113,28 @@
                 </div>
             </div>
 
-            <div class="kurssi_teksti col-4 col-s-3 col-xs-12">
-                <div class="opiskelu">
-                    <h2>Python-Ohjelmointi</h2>
-                    <p>Tämä kurssi antoi perustiedot ja -taidot Python-ohjelmoinnista.</p>
+            <div class="pikku_teksti2 col-4 col-s-12 col-xs-12">
+                <div class="infobox">
+                    <h2>Python-ohjelmointi</h2>
+                    <p>Tämä kurssi antoi perustiedot ja -taidot Python-ohjelmoinnista. Opin muuttujista, tiedostoista, ehtolauseista ja 
+                        silmukoista.
+                    </p>
                     <img src="images/python.PNG" alt="kuvakaappaus python-koodista">
                 </div>
             </div>
-            <div class="kurssi_teksti col-4 col-s-3 col-xs-12">
-                <div class="opiskelu">
+            <div class="pikku_teksti2 col-4 col-s-12 col-xs-12">
+                <div class="infobox">
                     <h2>Automaatiotekniikka</h2>
                     <p>Automaatiotekniikan kurssilla pääsin kurkistamaan automaatiotekniikan perusasioihin. Tein tehtäviä itsenäisesti, mutta
                         niiden lisäksi tällä kurssilla pääsin tekemään harjoituksia myös koulun automaatiolaboratorioon. Kussilla opittiin muun muuassa
                         mittaustekniikkaa, kenttäväyliä ja säätöpiirejä.
                     </p>
                     <img src="images/automaatiotekniikka.PNG" alt="kuvakaappaus automaatiotekniikan tehtävästä">
-                </div>
+                </div>  
             </div>
         </section>
-    </section>
+
+    <!--Alhaalla olevat yhteystiedot-->    
     <footer>
         <div class="ala_tiedot">
             <p>Kiinnostuitko? Ota yhteyttä!<br>Johanna Lyytinen<br>johanna.lyytinen@centria.fi</p>
