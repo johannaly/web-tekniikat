@@ -55,9 +55,9 @@ h3 {
 
 .infobox {
     border: 0.5px solid #087ED9;
-    padding: 30px;
+    padding: 1.875em;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 0.625em;
     border-collapse: collapse;
     background-color: white;
 }
@@ -66,7 +66,7 @@ section {
     max-width: 83.33%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 1.66em;
 }
 
 .pikku_teksti {
@@ -74,7 +74,7 @@ section {
     margin-right: auto;
     line-height: 1.5;
     text-align: center;
-    padding: 20px;
+    padding: 1.25em;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -86,7 +86,7 @@ section {
     margin-right: auto;
     line-height: 1.5;
     text-align: center;
-    padding: 20px;
+    padding: 1.25em;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -139,7 +139,7 @@ footer {
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 0.9375em;
 }
 
     /* Extra small devices (phones) */
