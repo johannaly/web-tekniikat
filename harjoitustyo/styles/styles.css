@@ -147,6 +147,23 @@ i {
     font-size: 2em;
 }
 
+/*sähköpostilinkin määritykset*/
+/* unvisited link */
+a:link {
+    color:#055694;
+}
+  
+/* visited link */
+a:visited {
+    color:#087ED9;
+}
+  
+/* mouse over link */
+a:hover {
+    color: #087ED9;
+}
+  
+
 
 
 /*määritykset responsiivisuutta varten*/
